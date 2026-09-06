@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "job_intelligence_live/main.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "job_intelligence_live/main.py" }
+  ]
+}
